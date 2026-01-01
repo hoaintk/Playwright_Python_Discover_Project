@@ -1,0 +1,11 @@
+[Visit] https://tmdb-discover.surge.sh/
+[Click] //a[text()='Popular']
+[Click] //p[text()='Type']/parent::div//div[text()='Movie']
+[Click] //div[contains(@class, 'option') and text()='Movie']
+[Click] //div[text()='Select...']
+[Click] //div[contains(@class, 'option') and text()='Action']
+[Click] //ul[@role='radiogroup']//div[@aria-posinset = '5']
+[Click] //div[@id='react-paginate']//li//a[text()='4']
+[Click] //div[@id='react-paginate']//li//a[text()='2']
+[Click] //div[@id='react-paginate']//li//a[text()='Next']
+[Click] //div[@id='react-paginate']//li//a[text()='Previous']

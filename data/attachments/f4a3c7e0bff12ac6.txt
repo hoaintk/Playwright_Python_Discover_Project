@@ -1,0 +1,6 @@
+[Visit] https://tmdb-discover.surge.sh/
+[Click] //a[text()='Top rated']
+[Click] //p[text()='Type']/parent::div//div[text()='Movie']
+[Click] //div[contains(@class, 'option') and text()='TV Shows']
+[Click] //div[text()='Select...']
+[Click] //div[contains(@class, 'option') and text()='Comedy']

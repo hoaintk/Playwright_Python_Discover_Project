@@ -1,0 +1,2 @@
+[Visit] https://tmdb-discover.surge.sh/
+[Fill] 'Avatar' in //input[@name ='search']

@@ -1,0 +1,10 @@
+[Visit] https://tmdb-discover.surge.sh/
+[Click] //a[text()='Trend']
+[Click] //p[text()='Type']/parent::div//div[text()='Movie']
+[Click] //div[contains(@class, 'option') and text()='TV Shows']
+[Click] //div[text()='Select...']
+[Click] //div[contains(@class, 'option') and text()='Comedy']
+[Click] //p[text()='Year']/parent::div//following-sibling::div//div[text()='1900']
+[Click] //div[contains(@class, 'option') and text()='2015']
+[Click] //p[text()='Year']/parent::div//following-sibling::div//div[text()='2025']
+[Click] //div[contains(@class, 'option') and text()='2020']

@@ -1,0 +1,7 @@
+[Visit] https://tmdb-discover.surge.sh/
+[Click] //a[text()='Trend']
+[Click] //p[text()='Type']/parent::div//div[text()='Movie']
+[Click] //div[contains(@class, 'option') and text()='TV Shows']
+[Click] //div[text()='Select...']
+[Click] //div[contains(@class, 'option') and text()='Comedy']
+[Click] //ul[@role='radiogroup']//div[@aria-posinset = '2']

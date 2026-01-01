@@ -1,0 +1,6 @@
+[Visit] https://tmdb-discover.surge.sh/
+[Click] //a[text()='Popular']
+[Click] //p[text()='Type']/parent::div//div[text()='Movie']
+[Click] //div[contains(@class, 'option') and text()='Movie']
+[Click] //div[text()='Select...']
+[Click] //div[contains(@class, 'option') and text()='Action']
