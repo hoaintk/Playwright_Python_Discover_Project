@@ -25,6 +25,10 @@ jobs:
           pip install pytest playwright pytest-playwright allure-pytest
           pip install allure-pytest
 
+      - name: Install Playwright browsers
+        run: |
+          python -m playwright install --with-deps
+
       - name: Run Playwright tests with Allure
         run: |
           pytest --alluredir=./reports/allure-results
