@@ -6,10 +6,12 @@ on:
   pull_request:
     branches: [ main ]
 
+permissions:
+  contents: write
+  
 jobs:
   test:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -40,3 +42,18 @@ jobs:
           name: allure-results
           path: reports/allure-results
           if-no-files-found: warn
+
+      - name: Generate Allure HTML report
+        if: always()
+        run: |
+          pip install allure-pytest
+          npm i -g allure-commandline --save-dev
+          allure generate reports/allure-results -o reports/allure-report --clean
+
+      - name: Deploy Allure report to GitHub Pages
+        if: always()
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: reports/allure-report
+          publish_branch: gh-pages
