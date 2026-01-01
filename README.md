@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# Playwright_Python_Discover_Project
-=======
 # Playwright Python Discover – UI Automation Project
 
 This project is a **UI automation test framework** built with:
@@ -82,4 +79,3 @@ Because UI has no API hooks, the framework relies on:
 - expect(locator).to_be_visible() to ensure element rendered on UI
 - Avoid static waits unless debugging
 - Wait for UI visibility, not only DOM presence
->>>>>>> origin/master
