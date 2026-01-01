@@ -1,0 +1,5 @@
+[
+  { "name": "The Shawshank Redemption", "genre": "Drama", "year": 1994 },
+  { "name": "The Godfather", "genre": "Drama", "year": 1972 },
+  { "name": "The Godfather Part II", "genre": "Drama", "year": 1974 }
+]
