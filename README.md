@@ -79,3 +79,13 @@ Because UI has no API hooks, the framework relies on:
 - expect(locator).to_be_visible() to ensure element rendered on UI
 - Avoid static waits unless debugging
 - Wait for UI visibility, not only DOM presence
+
+## 7. Check Allure Report after finishing run Allure Report
+- Go to Project -> Settings -> Pages (sidebar) -> Source: choose Deploy from a branch -> Branch: choose gh-pages / (root)
+- After running CI -> go to that position, you can see the link to check Allure Report after running CI
+
+
+## Notes:
+- Because I do not have source to access the database so I need to need to hardcode the data from the UI to create the JSON file. As a result, some testcases can fail because the UI changes the film list but the JSON file has not been updated.
+- If I work in the reality, I will access to the database to get all film list after filter and convert to JSON file to verify.
+ 
